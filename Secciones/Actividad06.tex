@@ -1,14 +1,31 @@
 \section{Conclusiones} 
-\textbf{}\\
 \begin{flushleft}
-
-
 \begin{itemize}
+\textbf{}\\
+El uso de un ORM es una alternativa sumamente efectiva a la hora de trasladar el modelo conceptual
+(orientado a objetos) al esquema relacional nativo de las bases de datos SQL. Evita la inclusión de
+sentencias SQL embebidas en el código de la aplicación, lo que a su vez facilita la migración hacia otro
+sistema gestor de bases de datos. Incorpora una capa de abstracción entre el modelo relacional físico y
+la capa de negocios de la aplicación. Al ser realizado, en esta capa, de manera automática la conversión
+de instrucciones orientadas a objetos, a sentencias SQL, minimiza la ocurrencia de errores humanos.
 
+\textbf{}\\
+De cualquier modo utilizar un ORM no debe ser considerado una panacea, sino que debe usarse a
+discreción; teniendo en cuenta las particularidades de cada problema a modelar. En determinados casos
+no es recomendable el uso de un ORM, sobre todo cuando se imponen tiempos de respuesta mínimos o
+se requiere una menor sobrecarga. En estos casos lo más conveniente es el uso de un microORM;
+evitando siempre que sea posible las inyecciones de SQL Inline.
 
-jesus
+\textbf{}\\
+Lo anteriormente expuesto libera a los desarrolladores de aplicaciones de la responsabilidad de conocer
+las múltiples variantes de SQL que existen en función del gestor de bases de datos que se utilice. No
+obstante, en escenarios en que se necesite hacer un uso más eficiente del sistema de almacenamiento
+de información, personalizado de acuerdo a las necesidades de la aplicación, y se escoja como gestor de
+bases de datos una variante NoSQL no es necesaria la utilización de un ORM. 
 
-	
+\textbf{}\\
+En resumen, en dependencia del gestor de bases de datos a emplear, se recomienda siempre que sea
+posible y sea factible la utilización de un ORM
 
 
 \end{itemize} 
